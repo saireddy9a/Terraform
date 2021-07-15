@@ -146,7 +146,7 @@ resource "aws_security_group" "Sample-Sg" {
     to_port          = 22
     protocol         = "tcp"
      # need to provide the IP address 55.55.55.55
-    cidr_blocks      = ["61.3.77.148/32","106.203.45.237/32"]
+    cidr_blocks      = ["55.55.55.55/32"]
   }
   ingress {
     description      = "TLS from VPC"
@@ -154,7 +154,7 @@ resource "aws_security_group" "Sample-Sg" {
     to_port          = 80
     protocol         = "tcp"
      # need to provide the IP address 55.55.55.55
-    cidr_blocks      = ["0.0.0.0/0"]
+    cidr_blocks      = ["55.55.55.55/32"]
   }
   egress {
     from_port        = 0
